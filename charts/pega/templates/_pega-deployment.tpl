@@ -157,7 +157,7 @@ spec:
 {{- if .custom }}
 {{- if .custom.containerLifecycleHooks }}
         lifecycle:
-{{ toYaml .custom.containerLifecycleHooks | indent 8 }}
+{{ toYaml .custom.containerLifecycleHooks | indent 10 }}
 {{- end }}
 {{- end }}
         # Specify any of the container environment variables here
